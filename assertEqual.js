@@ -1,9 +1,9 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(":relieved::relieved::relieved: Assertion Passed: " + actual + " === " + expected);
+    console.log(`:relieved::relieved::relieved: Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(":weary::weary::weary: Assertion Failed: " + actual + " !== " + expected);
+    console.log(`:weary::weary::weary: Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
