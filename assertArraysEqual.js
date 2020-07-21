@@ -9,14 +9,13 @@ const eqArrays = function(array1, array2) {
   return areEqual;
 };
 
-const assertArraysEqual = function() {
-  let arrays = process.argv.slice(2);
-
-  if (eqArrays(arrays[0], arrays[1])) {
-    console.log("These arrays are equal :)");
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2)) {
+    console.log(`${array1} === ${array2}\nThese arrays are equal :)`);
   } else {
-    console.log("These arrays are not equal :(");
+    console.log(`${array1} !== ${array2}\nThese arrays are not equal :(`);
   }
 };
 
-assertArraysEqual();
+assertArraysEqual([6, 7, 8], [6, 7, 8]);
+assertArraysEqual([6, 7, 8], [6, 7, 9]);
