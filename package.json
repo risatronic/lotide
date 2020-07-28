@@ -1,0 +1,26 @@
+{
+  "name": "@risatronic/lotide",
+  "version": "1.0.0",
+  "description": "a mini/modified version of lodash library created as week 1 project at Lighthouse Labs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risatronic/lotide.git"
+  },
+  "author": {"name": "Marisa Doig"},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risatronic/lotide/issues"
+  },
+  "homepage": "https://github.com/risatronic/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
