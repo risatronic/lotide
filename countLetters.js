@@ -21,4 +21,6 @@ const countLetters = function(string){
   return letterCount;
 };
 
-console.log(countLetters("hellothisisalong test of my function"));
+// console.log(countLetters("hellothisisalong test of my function"));
+
+module.exports = countLetters;

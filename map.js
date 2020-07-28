@@ -25,20 +25,22 @@ const map = function(array, callback) {
   return results;
 };
 
-const numbers = [1, 2, 3, 4, 5];
+module.exports = map;
 
-let results = map(numbers, x => x * x);
-console.log(assertArraysEqual(results, [1, 4, 9, 16, 25]));
-console.log(assertArraysEqual(results, [1, 4, 9, 16, 25, 7]));
+// const numbers = [1, 2, 3, 4, 5];
 
-const letters = ['a', 'b', 'c', 'd'];
+// let results = map(numbers, x => x * x);
+// console.log(assertArraysEqual(results, [1, 4, 9, 16, 25]));
+// console.log(assertArraysEqual(results, [1, 4, 9, 16, 25, 7]));
 
-results = map(letters, x => x += x);
-console.log(assertArraysEqual(results, ['aa', 'bb', 'cc', 'dd']));
-console.log(assertArraysEqual(results, ['aa', 'bb', 'cc', 'dd', 'ee']));
+// const letters = ['a', 'b', 'c', 'd'];
 
-const numbers2 = [1, 2, 3];
+// results = map(letters, x => x += x);
+// console.log(assertArraysEqual(results, ['aa', 'bb', 'cc', 'dd']));
+// console.log(assertArraysEqual(results, ['aa', 'bb', 'cc', 'dd', 'ee']));
 
-results = map(numbers2, x => x += `${x}`);
-console.log(assertArraysEqual(results, [11, 22, 33])); //false due to type change
-console.log(assertArraysEqual(results, ['11', '22', '33'])); //true
+// const numbers2 = [1, 2, 3];
+
+// results = map(numbers2, x => x += `${x}`);
+// console.log(assertArraysEqual(results, [11, 22, 33])); //false due to type change
+// console.log(assertArraysEqual(results, ['11', '22', '33'])); //true
